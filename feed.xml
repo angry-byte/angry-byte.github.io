@@ -4,7 +4,7 @@
   <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-06T16:01:27+08:00</updated>
+  <updated>2022-02-06T16:31:50+08:00</updated>
   <author>
     <name>AngryByte</name>
     <uri>https://www.angry-byte.com/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>THM Anonforce Writeup</title>
+    <link href="https://www.angry-byte.com/posts/THM-Anonforce-Writeup/" rel="alternate" type="text/html" title="THM Anonforce Writeup" />
+    <published>2022-01-17T00:00:00+08:00</published>
+  
+    <updated>2022-01-17T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/THM-Anonforce-Writeup/</id>
+    <content src="https://www.angry-byte.com/posts/THM-Anonforce-Writeup/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Anonforce is an easy room on TryHackMe created to test password cracking skills.
+
+Recon
+
+Starting with a nmap scan, I see that there are two ports open which are FTP and SSH.
+
+
+
+A more aggressive port scan reveals that that the FTP service has anonymous login enabled.
+
+
+
+Not only that but it seems I have access to the root directory machine although not root privileges. Looking into the home di...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>

@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "THM Anonforce Writeup",
+    "url": "/posts/THM-Anonforce-Writeup/",
+    "categories": "Writeups",
+    "tags": "TryHackMe, CTF",
+    "date": "2022-01-17 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Anonforce is an easy room on TryHackMe created to test password cracking skills.ReconStarting with a nmap scan, I see that there are two ports open which are FTP and SSH.A more aggressive port scan reveals that that the FTP service has anonymous login enabled.Not only that but it seems I have access to the root directory machine although not root privileges. Looking into the home directory, there is the user “melodias” and in his home directory is the user.txt file.After a little time looking around, I noticed that there is the directory notread in the root directory. I downloaded the files private.asc which seems to be a private pgp key and backup.pgp which is an encrypted message presumably by the pgp key.Exploitation - Weak PasswordsAfter downloading the files, I get ready to import and decrypt the PGP message only to find out that the private key is password protected. Using gpg2john, I created a recognizable password hash for JohnTheRipper to crack. The wordlist I used was the 10k-most-common.txt which cracked the password in less than a minute.The contents of backup.pgp is what seemed to be the shadow file which contains all the password hashes of users in a Linux machine. For this scenario, I used unshadow and just like the last one, I used it to generate a recognizable hash for JohnTheRipper. The passwd file is also required to use unshadow, but that can be obtained using FTP.Whichever wordlist you choose makes a whole lot of difference. In my first cracking attempt, I used  the default wordlist for JTR which led to my computer running for an entire hour. Afterwards, I stopped the process because I thought this amount of time for password cracking was unusual for an easy level room. So I switched wordlists and using 10-million-password-list-top-1000000.txt from SecLists, I cracked the password in less than 20 seconds. After discovering the password, I logged in through SSH and read the root.txt file."
+  },
+  
+  {
     "title": "TryHackMe Lazy Admin Walkthrough",
     "url": "/posts/THM-Lazy-Admin-Walkthrough/",
     "categories": "Writeups",
