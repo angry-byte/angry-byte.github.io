@@ -1,0 +1,157 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>angry-byte.com</title>
+  <subtitle>A writing blog mainly on cybersecurity.</subtitle>
+  <updated>2022-02-06T15:08:15+08:00</updated>
+  <author>
+    <name>AngryByte</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
+  <rights> © 2022 AngryByte </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>TryHackMe Lazy Admin Walkthrough</title>
+    <link href="http://localhost:4000/posts/THM-Lazy-Admin-Walkthrough/" rel="alternate" type="text/html" title="TryHackMe Lazy Admin Walkthrough" />
+    <published>2022-01-07T00:00:00+08:00</published>
+  
+    <updated>2022-01-07T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/THM-Lazy-Admin-Walkthrough/</id>
+    <content src="http://localhost:4000/posts/THM-Lazy-Admin-Walkthrough/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Lazy Admin is a an easy CTF room on TryHackMe that will test one’s enumeration and linux skills.
+
+Recon
+
+After deploying the machine, I did a mandatory nmap scan to see what ports are open and what network services are being used.
+
+
+
+Here we see that there are 2 network services running on the machine. With a Firefox browser, I visited the website on port 80. Once on the site, I am greeted with...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>TryHackMe Vulnerability Capstone Writeup</title>
+    <link href="http://localhost:4000/posts/THM-Vulnerability-Capstone/" rel="alternate" type="text/html" title="TryHackMe Vulnerability Capstone Writeup" />
+    <published>2021-12-27T00:00:00+08:00</published>
+  
+    <updated>2021-12-27T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/THM-Vulnerability-Capstone/</id>
+    <content src="http://localhost:4000/posts/THM-Vulnerability-Capstone/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The THM room Vulnerability Capstone is a CTF room built to practice your vulnerability and exploit researching skills.
+
+Recon
+
+Once the machine has started, we do a quick mandatory nmap scan to see what network services are running on the machine.
+
+
+
+Here we see that there are two ports open, SSH and HTTP. Using a browser, we then take a look at the website.
+
+
+
+Immediately we are greeted by the...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>TryHackMe Inclusion Writeup</title>
+    <link href="http://localhost:4000/posts/THM-Inclusion/" rel="alternate" type="text/html" title="TryHackMe Inclusion Writeup" />
+    <published>2021-12-23T00:00:00+08:00</published>
+  
+    <updated>2021-12-23T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/THM-Inclusion/</id>
+    <content src="http://localhost:4000/posts/THM-Inclusion/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan.
+
+Enumeration
+
+With a nmap scan, we can see that we have two ports that are open.
+
+
+
+Using your HTTP proxy software of choice (I use OWASP ZAP) we then visit the website.
+
+
+
+L...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

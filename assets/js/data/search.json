@@ -1,0 +1,49 @@
+[
+  
+  {
+    "title": "TryHackMe Lazy Admin Walkthrough",
+    "url": "/posts/THM-Lazy-Admin-Walkthrough/",
+    "categories": "Writeups",
+    "tags": "[Linux], [Vulnerabilities], [TryHackMe], [CTF]",
+    "date": "2022-01-07 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Lazy Admin is a an easy CTF room on TryHackMe that will test one’s enumeration and linux skills.ReconAfter deploying the machine, I did a mandatory nmap scan to see what ports are open and what network services are being used.Here we see that there are 2 network services running on the machine. With a Firefox browser, I visited the website on port 80. Once on the site, I am greeted with the Apache2 Default Page. There’s nothing else to do here, so I went back to doing more enumeration and information gathering.Using Ffuf, I looked for what other directories are available on the website.I then discovered the directory “content” and visited it.Here I see that it’s another default page that’s under construction. However there is something interesting. “SweetRice” is what’s being used to manage the content on the site. Using this information, we can search for any available vulnerabilities that we can use on the site.On the site Exploit-DB I discover that there are a number of vulnerabilities that I can use. I looked at the most severe vulnerability that would allow PHP Code Execution, but I tested it and it didn’t seemed to have worked. The vulnerabilities that allow Arbitrary File Uploading and Downloading would only work with valid credentials to the CMS. So there’s only one vulnerability left, that being Backup Disclosure.The exploit report stated that a mysql backup file can be accessed on the site in the directory /inc/mysql_backup. A vulnerability like this can lead to gaining access to the CMS and being able to use the file upload and download vulnerabilities. So with that I took a look at the URI http://thm_host.thm/content/inc/mysql_backup and I discover there to be a MySQL backup file. Seeing it, I downloaded it and took a look at it’s contents.Analyzing the file, I see that there is the username “manager” with what looks to be a hashed password.ExploitationUsing CrackStation, a popular password hash cracking site, I entered the hash and discovered what the password was.Now I just needed to use the credentials on a login. Looking back at the vulnerability reports on arbitrary file uploading and downloading, there was the directory “as”. At the same time, my Ffuf enumeration picked up on it.It wasn’t necessary to enumerate the site again, but it’s always good to keep some sort of scan running in the background.After checking the credentials to be valid, we can then leverage the Arbitrary File Upload vulnerability to achieve a reverse shell connection. There are two ways we can do it. One is to login to the site, upload the shell and view it on a browser to execute it, or use the python script on exploit-db. I did the former.Once I attempted to upload a shell onto the site, I saw that my uploads weren’t appearing on the site. After a moment, I realized there was likely some sort of filter being used on the files being uploaded to the site. So I changed the file extension of my file from “shell.php” to “shell.php5”. After uploading the file, I saw it, executed the file, and achieved a reverse shell connection.First thing I did was list all the users in the home directory and then list all the contents of the user itguy’s files and directories. I then read the user.txt file.Privilege EscalationNow that I’ve managed to connect to the machine, I then proceeded to escalate my privileges to root.Other than user.txt, I noticed that there is the file backup.pl which is a script written in the perl programming language.I checked crontab to see if it is set to execute by root every so often but that was not the case. So I then checked if there are any sudo privileges www-data had and as we can see, we can execute the script using sudo without a password.Although the script backup.pl itself isn’t writable, it executes commands in the file copy.sh located in /etc/ which is a writable file. By overwriting copy.sh, we can execute commands using root privilegesAt this point, I could either create another reverse shell that would be in root or just execute a command that would read the root.txt file. I did the latter."
+  },
+  
+  {
+    "title": "TryHackMe Vulnerability Capstone Writeup",
+    "url": "/posts/THM-Vulnerability-Capstone/",
+    "categories": "Writeups",
+    "tags": "[Vulnerabilities], [CTF], [TryHackMe]",
+    "date": "2021-12-27 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "The THM room Vulnerability Capstone is a CTF room built to practice your vulnerability and exploit researching skills.ReconOnce the machine has started, we do a quick mandatory nmap scan to see what network services are running on the machine.Here we see that there are two ports open, SSH and HTTP. Using a browser, we then take a look at the website.Immediately we are greeted by the default page of FUEL, a CMS software. The bottom version is also displayed to be 1.4. Both of which are the answers to questions 1 and 2 on task 2.The next question then asks what is the CVE ID that allows an attacker to remotely execute code on the web application. Here we can do two things, which is go straight to Google and search with the query “Fuel CMS 1.4 exploits” or search a vulnerability database such as Exploit-DB.On this webpage we see there are 3 exploits specifically that will allow RCE. Visiting any of the links will lead to the exploit code and the CVE ID which is CVE-2018-16763, the answer to question 3 on task 2.ExploitationNext is what I thought to be challenging as it took more time that I thought it should.Viewing each of the exploits, we see that they are each built slightly differently with one being made in python2, another in ruby, and the last in python3. I chose the python3 script by Padsala Trushal because I am familiar with the langauge and it was up to date.However to my surprise, the exploit didn’t work and just returns “system” whenever I attempted to execute a command. I then tried the other two exploits on the list but both of them also didn’t work.I looked back in the questions on the page and I reread the note that said “There are numerous exploits out there that can be used for this vulnerability (some more useful than others!)”. The way I interpretted this was that there are many exploits but not all of them would work. So we’re back into recon.From what I know, Github is a very well known site for programmers but it is also used by security engineers. Sometimes people would create their own custom exploits for CVEs making Github useful to search for exploits sometimes. Using the query “site:github.com CVE-2018-16763 exploit” on a search engine, I then went through pages of github repositories looking for an exploit that worked. The first one looked promising but I was disappointed as I couldn’t read the flag file.After a long while, I finally found an exploit that worked which was a bash script made by k4is3r13. Using it, we can then either create a reverse shell, or just read the flag file off /home/ubuntu/.Although I strugged a little bit finding an exploit that worked, it was satisfying to have finally found one with all that work. Overall this is a great room to practicing vulnerability and exploit researching skills."
+  },
+  
+  {
+    "title": "TryHackMe Inclusion Writeup",
+    "url": "/posts/THM-Inclusion/",
+    "categories": "Writeups",
+    "tags": "[TryHackMe], [CTF], [Web-Attacks]",
+    "date": "2021-12-23 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan.EnumerationWith a nmap scan, we can see that we have two ports that are open.Using your HTTP proxy software of choice (I use OWASP ZAP) we then visit the website.Looking around the website and clicking any of the “View details” links, we are displayed different text all of which are requested using the name= parameter in the URL. We can assume that this parameter is vulnerable to LFI. To test it, we can input the text ../../../../../etc/passwd into the parameter which makes a request to show the passwd file in the Linux machine.Here we see confirm that name= is in fact vulnerable to LFI and we see the user falconfeast and credentials.ExploitFrom here, there are two ways to read the user.txt and root.txt files. One is to use the credentials in the passwd file to login with SSH, escalate privileges and read the files or to just leverage the LFI vulnerability and read the files. I did the latter as I tested a guess to where the user.txt file is and I discovered that root.txt was also readable."
+  }
+  
+]
+
