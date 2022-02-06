@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-06T15:08:15+08:00</updated>
+  <updated>2022-02-06T16:01:27+08:00</updated>
   <author>
     <name>AngryByte</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://www.angry-byte.com/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://www.angry-byte.com/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="https://www.angry-byte.com/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
   <rights> © 2022 AngryByte </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>TryHackMe Lazy Admin Walkthrough</title>
-    <link href="http://localhost:4000/posts/THM-Lazy-Admin-Walkthrough/" rel="alternate" type="text/html" title="TryHackMe Lazy Admin Walkthrough" />
+    <link href="https://www.angry-byte.com/posts/THM-Lazy-Admin-Walkthrough/" rel="alternate" type="text/html" title="TryHackMe Lazy Admin Walkthrough" />
     <published>2022-01-07T00:00:00+08:00</published>
   
     <updated>2022-01-07T00:00:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/THM-Lazy-Admin-Walkthrough/</id>
-    <content src="http://localhost:4000/posts/THM-Lazy-Admin-Walkthrough/" />
+    <id>https://www.angry-byte.com/posts/THM-Lazy-Admin-Walkthrough/</id>
+    <content src="https://www.angry-byte.com/posts/THM-Lazy-Admin-Walkthrough/" />
     <author>
       <name>AngryByte</name>
     </author>
@@ -63,13 +63,13 @@ Here we see that there are 2 network services running on the machine. With a Fir
   
   <entry>
     <title>TryHackMe Vulnerability Capstone Writeup</title>
-    <link href="http://localhost:4000/posts/THM-Vulnerability-Capstone/" rel="alternate" type="text/html" title="TryHackMe Vulnerability Capstone Writeup" />
+    <link href="https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" rel="alternate" type="text/html" title="TryHackMe Vulnerability Capstone Writeup" />
     <published>2021-12-27T00:00:00+08:00</published>
   
     <updated>2021-12-27T00:00:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/THM-Vulnerability-Capstone/</id>
-    <content src="http://localhost:4000/posts/THM-Vulnerability-Capstone/" />
+    <id>https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/</id>
+    <content src="https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" />
     <author>
       <name>AngryByte</name>
     </author>
@@ -109,13 +109,13 @@ Immediately we are greeted by the...
   
   <entry>
     <title>TryHackMe Inclusion Writeup</title>
-    <link href="http://localhost:4000/posts/THM-Inclusion/" rel="alternate" type="text/html" title="TryHackMe Inclusion Writeup" />
+    <link href="https://www.angry-byte.com/posts/THM-Inclusion/" rel="alternate" type="text/html" title="TryHackMe Inclusion Writeup" />
     <published>2021-12-23T00:00:00+08:00</published>
   
     <updated>2021-12-23T00:00:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/THM-Inclusion/</id>
-    <content src="http://localhost:4000/posts/THM-Inclusion/" />
+    <id>https://www.angry-byte.com/posts/THM-Inclusion/</id>
+    <content src="https://www.angry-byte.com/posts/THM-Inclusion/" />
     <author>
       <name>AngryByte</name>
     </author>

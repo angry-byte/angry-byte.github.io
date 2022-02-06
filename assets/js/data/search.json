@@ -4,7 +4,7 @@
     "title": "TryHackMe Lazy Admin Walkthrough",
     "url": "/posts/THM-Lazy-Admin-Walkthrough/",
     "categories": "Writeups",
-    "tags": "[Linux], [Vulnerabilities], [TryHackMe], [CTF]",
+    "tags": "Linux, Vulnerabilities, TryHackMe, CTF",
     "date": "2022-01-07 00:00:00 +0800",
     
 
@@ -19,7 +19,7 @@
     "title": "TryHackMe Vulnerability Capstone Writeup",
     "url": "/posts/THM-Vulnerability-Capstone/",
     "categories": "Writeups",
-    "tags": "[Vulnerabilities], [CTF], [TryHackMe]",
+    "tags": "Vulnerabilities, CTF, TryHackMe",
     "date": "2021-12-27 00:00:00 +0800",
     
 
@@ -34,7 +34,7 @@
     "title": "TryHackMe Inclusion Writeup",
     "url": "/posts/THM-Inclusion/",
     "categories": "Writeups",
-    "tags": "[TryHackMe], [CTF], [Web-Attacks]",
+    "tags": "TryHackMe, CTF, Web-Attacks",
     "date": "2021-12-23 00:00:00 +0800",
     
 
