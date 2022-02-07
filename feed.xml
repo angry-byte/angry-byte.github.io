@@ -4,7 +4,7 @@
   <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-06T16:31:50+08:00</updated>
+  <updated>2022-02-07T17:03:17+08:00</updated>
   <author>
     <name>AngryByte</name>
     <uri>https://www.angry-byte.com/</uri>
@@ -17,6 +17,89 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>How to Hack your Ex-girlfriend's Instagram Account</title>
+    <link href="https://www.angry-byte.com/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/" rel="alternate" type="text/html" title="How to Hack your Ex-girlfriend's Instagram Account" />
+    <published>2022-01-27T00:00:00+08:00</published>
+  
+    <updated>2022-01-27T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/</id>
+    <content src="https://www.angry-byte.com/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Uncategorized" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Scenario: You’ve recently broke up with your ex and has blocked you on all social media including Instagram. Now you’re looking for a way to break into her IG account and get back at her.
+
+Well you won’t find the way to do it here. (͡° ͜ʖ ͡°)
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>THM Library Walkthrough</title>
+    <link href="https://www.angry-byte.com/posts/THM-Library-Walkthrough/" rel="alternate" type="text/html" title="THM Library Walkthrough" />
+    <published>2022-01-18T00:00:00+08:00</published>
+  
+    <updated>2022-01-18T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/THM-Library-Walkthrough/</id>
+    <content src="https://www.angry-byte.com/posts/THM-Library-Walkthrough/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking.
+
+Enumeration
+
+A little after booting the machine, I start with a nmap scan.
+
+
+
+In less than 6 seconds, I see that there are only two ports available. Using the OWASP ZAP, I visited the website.
+
+
+
+On the website we don’t see much, however we do see the username “meliodas” and 3 oth...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -147,52 +230,6 @@ Here we see that there are two ports open, SSH and HTTP. Using a browser, we the
 
 
 Immediately we are greeted by the...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>TryHackMe Inclusion Writeup</title>
-    <link href="https://www.angry-byte.com/posts/THM-Inclusion/" rel="alternate" type="text/html" title="TryHackMe Inclusion Writeup" />
-    <published>2021-12-23T00:00:00+08:00</published>
-  
-    <updated>2021-12-23T00:00:00+08:00</updated>
-  
-    <id>https://www.angry-byte.com/posts/THM-Inclusion/</id>
-    <content src="https://www.angry-byte.com/posts/THM-Inclusion/" />
-    <author>
-      <name>AngryByte</name>
-    </author>
-
-  
-    
-    <category term="Writeups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan.
-
-Enumeration
-
-With a nmap scan, we can see that we have two ports that are open.
-
-
-
-Using your HTTP proxy software of choice (I use OWASP ZAP) we then visit the website.
-
-
-
-L...
     </summary>
   
 

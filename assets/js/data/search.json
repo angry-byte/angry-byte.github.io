@@ -1,6 +1,36 @@
 [
   
   {
+    "title": "How to Hack your Ex-girlfriend&#39;s Instagram Account",
+    "url": "/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/",
+    "categories": "Uncategorized",
+    "tags": "",
+    "date": "2022-01-27 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Scenario: You’ve recently broke up with your ex and has blocked you on all social media including Instagram. Now you’re looking for a way to break into her IG account and get back at her.Well you won’t find the way to do it here. (͡° ͜ʖ ͡°)"
+  },
+  
+  {
+    "title": "THM Library Walkthrough",
+    "url": "/posts/THM-Library-Walkthrough/",
+    "categories": "Writeups",
+    "tags": "TryHackMe, CTF, Network-Attacks",
+    "date": "2022-01-18 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking.EnumerationA little after booting the machine, I start with a nmap scan.In less than 6 seconds, I see that there are only two ports available. Using the OWASP ZAP, I visited the website.On the website we don’t see much, however we do see the username “meliodas” and 3 other usernames. Which I assumed to also be a username on the system.Walking around the website, there is very little. Even the hyperlinks on the navigation bar didn’t lead to any new webpages, so I went back to enumerating more.Using the automated scan feature on ZAP, I found the robots.txt to have something interesting.The robots.txt on the site contained “rockyou” which is a very popular password cracking wordlist.ExploitationWith the little hint in robots.txt, I suspected that the user meliodas had weak credentials. Using hydra, I began to brute force the machine’s SSH service.After the valid credentials were found, I logged in, checked sudo privileges and then read the user.txt file.Privilege EscalationAfter entering the contents of user.txt into the answer bar, I started to look at bak.py to see if I could abuse the script to obtain root privilege. The script isn’t writable, but it is executable.Looking at the script, I see that the os and zipfile libraries are being used. After some research, I learned that I can escalate privileges by hijacking any of the two libraries that are being used in the python script.Using a malicious zipfile.py, I then copied it unto the machine using nano. Although you can also use scp.By executing bak.py, python will first look into the same directory as the script to see if there are any custom libraries that could be recalled. If a custom library is in the same directory as the script, the custom library will be prioritzed and called first rather than where the default libraries of Python are located.This trick has been patched however and now Python will call libraries from the default location before calling libraries on the same directory as the script. For this reason, it’s note likely to happen on the real world, but could still happen when doing CTFs on older machines.Once I executed the script and received a connection on netcat, I then read the root.txt file."
+  },
+  
+  {
     "title": "THM Anonforce Writeup",
     "url": "/posts/THM-Anonforce-Writeup/",
     "categories": "Writeups",

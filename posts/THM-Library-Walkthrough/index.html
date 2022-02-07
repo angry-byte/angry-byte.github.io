@@ -36,23 +36,23 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="TryHackMe Inclusion Writeup" />
+<meta property="og:title" content="THM Library Walkthrough" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan." />
-<meta property="og:description" content="The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan." />
-<link rel="canonical" href="https://www.angry-byte.com/posts/THM-Inclusion/" />
-<meta property="og:url" content="https://www.angry-byte.com/posts/THM-Inclusion/" />
+<meta name="description" content="The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking." />
+<meta property="og:description" content="The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking." />
+<link rel="canonical" href="https://www.angry-byte.com/posts/THM-Library-Walkthrough/" />
+<meta property="og:url" content="https://www.angry-byte.com/posts/THM-Library-Walkthrough/" />
 <meta property="og:site_name" content="angry-byte.com" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-12-23T00:00:00+08:00" />
+<meta property="article:published_time" content="2022-01-18T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="TryHackMe Inclusion Writeup" />
+<meta property="twitter:title" content="THM Library Walkthrough" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-12-23T00:00:00+08:00","datePublished":"2021-12-23T00:00:00+08:00","description":"The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan.","headline":"TryHackMe Inclusion Writeup","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.angry-byte.com/posts/THM-Inclusion/"},"url":"https://www.angry-byte.com/posts/THM-Inclusion/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-18T00:00:00+08:00","datePublished":"2022-01-18T00:00:00+08:00","description":"The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking.","headline":"THM Library Walkthrough","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.angry-byte.com/posts/THM-Library-Walkthrough/"},"url":"https://www.angry-byte.com/posts/THM-Library-Walkthrough/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>TryHackMe Inclusion Writeup | angry-byte.com
+  <title>THM Library Walkthrough | angry-byte.com
   </title>
 
   <!--
@@ -275,7 +275,7 @@
         
 
           
-            <span>TryHackMe Inclusion Writeup</span>
+            <span>THM Library Walkthrough</span>
           
 
         
@@ -598,6 +598,207 @@
 
       
     
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
 
     
       
@@ -746,6 +947,19 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -777,7 +991,7 @@
 
 
 
-<h1 data-toc-skip>TryHackMe Inclusion Writeup</h1>
+<h1 data-toc-skip>THM Library Walkthrough</h1>
 
 <div class="post-meta text-muted">
 
@@ -811,12 +1025,12 @@
 
 
 <em class="timeago"
-    date="2021-12-23 00:00:00 +0800"
+    date="2022-01-18 00:00:00 +0800"
     
       data-toggle="tooltip"
       data-placement="bottom"
-      title="Thu, Dec 23, 2021, 12:00 AM +0800"
-    >Dec 23, 2021</em>
+      title="Tue, Jan 18, 2022, 12:00 AM +0800"
+    >Jan 18</em>
 
       </span>
 
@@ -843,8 +1057,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="222 words">
-  <em>1 min</em> read</span>
+  title="405 words">
+  <em>2 min</em> read</span>
 
 
       <!-- page views -->
@@ -856,30 +1070,57 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <p>The TryHackMe <a href="https://tryhackme.com/room/inclusion">inclusion</a> room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started with a simple nmap scan.</p>
+  <p>The <a href="https://www.tryhackme.com/room/bsidesgtlibrary">THM library room</a> is a room created to practice SSH network service brute forcing and Python library hijacking.</p>
 
 <h2 id="enumeration">Enumeration<a href="#enumeration" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
-<p>With a nmap scan, we can see that we have two ports that are open.</p>
+<p>A little after booting the machine, I start with a nmap scan.</p>
 
-<p><a href="/assets/images/post1/1.png"><img data-src="/assets/images/post1/1.png" alt="Nmap Scan1" data-proofer-ignore></a></p>
+<p><a href="/assets/images/post5/1.png"><img data-src="/assets/images/post5/1.png" alt="Nmap Scan" data-proofer-ignore></a></p>
 
-<p>Using your HTTP proxy software of choice (I use OWASP ZAP) we then visit the website.</p>
+<p>In less than 6 seconds, I see that there are only two ports available. Using the OWASP ZAP, I visited the website.</p>
 
-<p><a href="/assets/images/post1/2.png"><img data-src="/assets/images/post1/2.png" alt="OWASP ZAP1" data-proofer-ignore></a></p>
+<p><a href="/assets/images/post5/2.png"><img data-src="/assets/images/post5/2.png" alt="Website Screenshot" data-proofer-ignore></a></p>
 
-<p>Looking around the website and clicking any of the “View details” links, we are displayed different text all of which are requested using the <strong>name=</strong> parameter in the URL. We can assume that this parameter is vulnerable to LFI. To test it, we can input the text <code class="language-plaintext highlighter-rouge">../../../../../etc/passwd</code> into the parameter which makes a request to show the passwd file in the Linux machine.</p>
+<p>On the website we don’t see much, however we do see the username “meliodas” and 3 other usernames. Which I assumed to also be a username on the system.</p>
 
-<p><a href="/assets/images/post1/3.png"><img data-src="/assets/images/post1/3.png" alt="OWASP ZAP2" data-proofer-ignore></a></p>
+<p>Walking around the website, there is very little. Even the hyperlinks on the navigation bar didn’t lead to any new webpages, so I went back to enumerating more.</p>
 
-<p>Here we see confirm that <em>name=</em> is in fact vulnerable to LFI and we see the user falconfeast and credentials.</p>
+<p>Using the automated scan feature on ZAP, I found the robots.txt to have something interesting.</p>
 
-<h2 id="exploit">Exploit<a href="#exploit" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+<p><a href="/assets/images/post5/3.png"><img data-src="/assets/images/post5/3.png" alt="ZAP Screenshot" data-proofer-ignore></a></p>
 
-<p>From here, there are two ways to read the user.txt and root.txt files. One is to use the credentials in the passwd file to login with SSH, escalate privileges and read the files or to just leverage the LFI vulnerability and read the files. I did the latter as I tested a guess to where the user.txt file is and I discovered that root.txt was also readable.</p>
+<p>The robots.txt on the site contained “rockyou” which is a very popular password cracking wordlist.</p>
 
-<p><a href="/assets/images/post1/4.png"><img data-src="/assets/images/post1/4.png" alt="user.txt" data-proofer-ignore></a>
-<a href="/assets/images/post1/5.png"><img data-src="/assets/images/post1/5.png" alt="root.txt" data-proofer-ignore></a></p>
+<h2 id="exploitation">Exploitation<a href="#exploitation" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<p>With the little hint in robots.txt, I suspected that the user meliodas had weak credentials. Using hydra, I began to brute force the machine’s SSH service.</p>
+
+<p><a href="/assets/images/post5/4.png"><img data-src="/assets/images/post5/4.png" alt="Hydra Screenshot" data-proofer-ignore></a></p>
+
+<p>After the valid credentials were found, I logged in, checked sudo privileges and then read the user.txt file.</p>
+
+<p><a href="/assets/images/post5/5.png"><img data-src="/assets/images/post5/5.png" alt="Login Screenshot" data-proofer-ignore></a></p>
+
+<h2 id="privilege-escalation">Privilege Escalation<a href="#privilege-escalation" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<p>After entering the contents of user.txt into the answer bar, I started to look at <em>bak.py</em> to see if I could abuse the script to obtain root privilege. The script isn’t writable, but it is executable.</p>
+
+<p><a href="/assets/images/post5/6.png"><img data-src="/assets/images/post5/6.png" alt="bak.py" data-proofer-ignore></a></p>
+
+<p>Looking at the script, I see that the os and zipfile libraries are being used. After some research, I learned that I can escalate privileges by hijacking any of the two libraries that are being used in the python script.</p>
+
+<p>Using a malicious <em>zipfile.py</em>, I then copied it unto the machine using nano. Although you can also use scp.</p>
+
+<p><a href="/assets/images/post5/7.png"><img data-src="/assets/images/post5/7.png" alt="zipfile.py" data-proofer-ignore></a></p>
+
+<p>By executing <em>bak.py</em>, python will first look into the same directory as the script to see if there are any custom libraries that could be recalled. If a custom library is in the same directory as the script, the custom library will be prioritzed and called first rather than where the default libraries of Python are located.</p>
+
+<p>This trick has been patched however and now Python will call libraries from the default location before calling libraries on the same directory as the script. For this reason, it’s note likely to happen on the real world, but could still happen when doing CTFs on older machines.</p>
+
+<p>Once I executed the script and received a connection on netcat, I then read the root.txt file.</p>
+
+<p><a href="/assets/images/post5/8.png"><img data-src="/assets/images/post5/8.png" alt="root.txt" data-proofer-ignore></a></p>
 
 </div>
 
@@ -905,8 +1146,8 @@
       <a href="/tags/ctf/"
           class="post-tag no-text-decoration" >CTF</a>
       
-      <a href="/tags/web-attacks/"
-          class="post-tag no-text-decoration" >Web-Attacks</a>
+      <a href="/tags/network-attacks/"
+          class="post-tag no-text-decoration" >Network-Attacks</a>
       
   </div>
   
@@ -940,19 +1181,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=TryHackMe Inclusion Writeup - angry-byte.com&url=https://www.angry-byte.com/posts/THM-Inclusion/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=THM Library Walkthrough - angry-byte.com&url=https://www.angry-byte.com/posts/THM-Library-Walkthrough/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=TryHackMe Inclusion Writeup - angry-byte.com&u=https://www.angry-byte.com/posts/THM-Inclusion/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=THM Library Walkthrough - angry-byte.com&u=https://www.angry-byte.com/posts/THM-Library-Walkthrough/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=TryHackMe Inclusion Writeup - angry-byte.com&url=https://www.angry-byte.com/posts/THM-Inclusion/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=THM Library Walkthrough - angry-byte.com&url=https://www.angry-byte.com/posts/THM-Library-Walkthrough/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -1248,59 +1489,59 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
 
 
 
@@ -1318,6 +1559,40 @@
     <h3 class="pt-2 mt-1 mb-4 ml-1"
       data-toc-skip>Further Reading</h3>
     <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/THM-Inclusion/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+
+
+
+
+<em class="timeago small"
+    date="2021-12-23 00:00:00 +0800"
+    >Dec 23, 2021</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe Inclusion Writeup</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     
       
       
@@ -1395,48 +1670,6 @@ After deploying the machine, I did a mandatory nmap scan to see what ports are o
         </a>
       </div>
     
-      
-      
-      <div class="card">
-        <a href="/posts/THM-Anonforce-Writeup/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
--->
-
-
-
-
-
-<em class="timeago small"
-    date="2022-01-17 00:00:00 +0800"
-    >Jan 17</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>THM Anonforce Writeup</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                Anonforce is an easy room on TryHackMe created to test password cracking skills.
-
-Recon
-
-Starting with a nmap scan, I see that there are two ports open which are FTP and SSH.
-
-
-
-A more aggressive p...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
 
@@ -1449,16 +1682,16 @@ A more aggressive p...
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <span class="btn btn-outline-primary disabled"
+  <a href="/posts/THM-Anonforce-Writeup/" class="btn btn-outline-primary"
     prompt="Older">
-    <p>-</p>
-  </span>
+    <p>THM Anonforce Writeup</p>
+  </a>
   
 
   
-  <a href="/posts/THM-Vulnerability-Capstone/" class="btn btn-outline-primary"
+  <a href="/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>TryHackMe Vulnerability Capstone Writeup</p>
+    <p>How to Hack your Ex-girlfriend's Instagram Account</p>
   </a>
   
 
