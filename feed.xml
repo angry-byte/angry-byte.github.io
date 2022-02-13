@@ -4,7 +4,7 @@
   <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-08T14:26:33+08:00</updated>
+  <updated>2022-02-14T05:59:54+08:00</updated>
   <author>
     <name>AngryByte</name>
     <uri>https://www.angry-byte.com/</uri>
@@ -17,6 +17,48 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>TryHackMe Gallery Writeup</title>
+    <link href="https://www.angry-byte.com/posts/THM-Gallery-Writeup/" rel="alternate" type="text/html" title="TryHackMe Gallery Writeup" />
+    <published>2022-02-14T00:42:00+08:00</published>
+  
+    <updated>2022-02-14T00:42:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/THM-Gallery-Writeup/</id>
+    <content src="https://www.angry-byte.com/posts/THM-Gallery-Writeup/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The THM room Gallery is an easy level CTF room created to test your skills in SQLi and exploiting known vulnerabilities.
+
+Recon
+
+Start with a simple port scan.
+
+
+
+Here we can see that there are two ports open on the system. So the answer to the first question in task 1 is 2. If we were to then visit the website, we would be shown a default page for Apache2 in Ubuntu. However, if we were to visi...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -176,48 +218,6 @@ A more aggressive port scan reveals that that the FTP service has anonymous logi
 
 
 Not only that but it seems I have access to the root directory machine although not root privileges. Looking into the home di...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>TryHackMe Lazy Admin Walkthrough</title>
-    <link href="https://www.angry-byte.com/posts/THM-Lazy-Admin-Walkthrough/" rel="alternate" type="text/html" title="TryHackMe Lazy Admin Walkthrough" />
-    <published>2022-01-07T00:00:00+08:00</published>
-  
-    <updated>2022-01-07T00:00:00+08:00</updated>
-  
-    <id>https://www.angry-byte.com/posts/THM-Lazy-Admin-Walkthrough/</id>
-    <content src="https://www.angry-byte.com/posts/THM-Lazy-Admin-Walkthrough/" />
-    <author>
-      <name>AngryByte</name>
-    </author>
-
-  
-    
-    <category term="Writeups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Lazy Admin is a an easy CTF room on TryHackMe that will test one’s enumeration and linux skills.
-
-Recon
-
-After deploying the machine, I did a mandatory nmap scan to see what ports are open and what network services are being used.
-
-
-
-Here we see that there are 2 network services running on the machine. With a Firefox browser, I visited the website on port 80. Once on the site, I am greeted with...
     </summary>
   
 
