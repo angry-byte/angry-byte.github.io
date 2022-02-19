@@ -4,7 +4,7 @@
   <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-19T20:02:31+08:00</updated>
+  <updated>2022-02-19T20:06:41+08:00</updated>
   <author>
     <name>AngryByte</name>
     <uri>https://www.angry-byte.com/</uri>
@@ -220,7 +220,7 @@ Here we can see that there are two ports open on the system. So the answer to th
 
 
 
-      On January 25, 2022, security researchers at Qualys labs disclosed a Local Privilege Escalation vulnerability in Linux within Polkit’s pkexec component. Listed as CVE-2021-4034 and given a high severity rating of 7.8 out of 10, this vulnerability affects many Linux distributions including Ubuntu, Debian, Fedora, and CentOS. A proof of concept (POC) wasn’t submitted by Qualys along with their di...
+      On January 25, 2022, security researchers at Qualys labs disclosed a Local Privilege Escalation vulnerability in Linux within Polkit’s pkexec component. Listed as CVE-2021-4034 and given a high severity rating of 7.8 out of 10 on the CVSS scale, this vulnerability affects many Linux distributions including Ubuntu, Debian, Fedora, and CentOS. A proof of concept (POC) wasn’t submitted by Qualys a...
     </summary>
   
 
