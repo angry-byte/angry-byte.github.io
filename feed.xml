@@ -4,7 +4,7 @@
   <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-14T05:59:54+08:00</updated>
+  <updated>2022-02-19T20:02:31+08:00</updated>
   <author>
     <name>AngryByte</name>
     <uri>https://www.angry-byte.com/</uri>
@@ -17,6 +17,138 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Network Analysis of Emotet Malware Activity Using Wireshark</title>
+    <link href="https://www.angry-byte.com/posts/emotet_network_analysis/" rel="alternate" type="text/html" title="Network Analysis of Emotet Malware Activity Using Wireshark" />
+    <published>2022-02-19T00:00:00+08:00</published>
+  
+    <updated>2022-02-19T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/emotet_network_analysis/</id>
+    <content src="https://www.angry-byte.com/posts/emotet_network_analysis/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Cybersecurity" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+In this post I will be showing you how I analyzed emotet malware in a network log using Wireshark and hopefully this will help you give an idea of what to do and look for when analyzing a network log using Wireshark.
+
+While searching for pcap files to analyze, I came across the site https://www.malware-traffic-analysis.net/. It is a site that collects network logs from malware so ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>TryHackMe Plotted-TMS Writeup</title>
+    <link href="https://www.angry-byte.com/posts/THM-plotted-tms-writeup/" rel="alternate" type="text/html" title="TryHackMe Plotted-TMS Writeup" />
+    <published>2022-02-19T00:00:00+08:00</published>
+  
+    <updated>2022-02-19T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/THM-plotted-tms-writeup/</id>
+    <content src="https://www.angry-byte.com/posts/THM-plotted-tms-writeup/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+Plotted-TMS is a easy level THM room created by sa.infinity8888.
+
+Recon
+
+Starting with 2 nmap scans, we see that there are 2 services running - SSH and Apache on port 80 and 445.
+
+
+
+Visiting both sites leads to a default Apache page so it’s back to recon.
+
+
+
+Running ffuf on port 80 shows a couple interesting directories.
+
+
+
+We then see a possible SSH key but it is revealed that th...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>TryHackMe h4cked Writeup</title>
+    <link href="https://www.angry-byte.com/posts/THM-h4cked-Writeup/" rel="alternate" type="text/html" title="TryHackMe h4cked Writeup" />
+    <published>2022-02-19T00:00:00+08:00</published>
+  
+    <updated>2022-02-19T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/THM-h4cked-Writeup/</id>
+    <content src="https://www.angry-byte.com/posts/THM-h4cked-Writeup/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Writeups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      h4cked is an easy CTF room that exercises your skills in network analysis.
+
+Network Analysis Using Wireshark
+
+The story behind this room is that a machine got compromised and now we must examine a .pcap file to find out what happened. The first question asks us what service the attacker is trying to log into.
+
+
+
+A quick skim of the log shows that there is a lot of traffic going into the FTP ser...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -89,135 +221,6 @@ Here we can see that there are two ports open on the system. So the answer to th
 
 
       On January 25, 2022, security researchers at Qualys labs disclosed a Local Privilege Escalation vulnerability in Linux within Polkit’s pkexec component. Listed as CVE-2021-4034 and given a high severity rating of 7.8 out of 10, this vulnerability affects many Linux distributions including Ubuntu, Debian, Fedora, and CentOS. A proof of concept (POC) wasn’t submitted by Qualys along with their di...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>How to Hack your Ex-girlfriend's Instagram Account</title>
-    <link href="https://www.angry-byte.com/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/" rel="alternate" type="text/html" title="How to Hack your Ex-girlfriend's Instagram Account" />
-    <published>2022-01-27T00:00:00+08:00</published>
-  
-    <updated>2022-01-27T00:00:00+08:00</updated>
-  
-    <id>https://www.angry-byte.com/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/</id>
-    <content src="https://www.angry-byte.com/posts/How-to-Hack-Your-Ex-Girlfriend's-Instagram-Account/" />
-    <author>
-      <name>AngryByte</name>
-    </author>
-
-  
-    
-    <category term="Uncategorized" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Scenario: You’ve recently broke up with your ex and has blocked you on all social media including Instagram. Now you’re looking for a way to break into her IG account and get back at her.
-
-Well you won’t find the way to do it here. (͡° ͜ʖ ͡°)
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>THM Library Walkthrough</title>
-    <link href="https://www.angry-byte.com/posts/THM-Library-Walkthrough/" rel="alternate" type="text/html" title="THM Library Walkthrough" />
-    <published>2022-01-18T00:00:00+08:00</published>
-  
-    <updated>2022-01-18T00:00:00+08:00</updated>
-  
-    <id>https://www.angry-byte.com/posts/THM-Library-Walkthrough/</id>
-    <content src="https://www.angry-byte.com/posts/THM-Library-Walkthrough/" />
-    <author>
-      <name>AngryByte</name>
-    </author>
-
-  
-    
-    <category term="Writeups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking.
-
-Enumeration
-
-A little after booting the machine, I start with a nmap scan.
-
-
-
-In less than 6 seconds, I see that there are only two ports available. Using the OWASP ZAP, I visited the website.
-
-
-
-On the website we don’t see much, however we do see the username “meliodas” and 3 oth...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>THM Anonforce Writeup</title>
-    <link href="https://www.angry-byte.com/posts/THM-Anonforce-Writeup/" rel="alternate" type="text/html" title="THM Anonforce Writeup" />
-    <published>2022-01-17T00:00:00+08:00</published>
-  
-    <updated>2022-01-17T00:00:00+08:00</updated>
-  
-    <id>https://www.angry-byte.com/posts/THM-Anonforce-Writeup/</id>
-    <content src="https://www.angry-byte.com/posts/THM-Anonforce-Writeup/" />
-    <author>
-      <name>AngryByte</name>
-    </author>
-
-  
-    
-    <category term="Writeups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Anonforce is an easy room on TryHackMe created to test password cracking skills.
-
-Recon
-
-Starting with a nmap scan, I see that there are two ports open which are FTP and SSH.
-
-
-
-A more aggressive port scan reveals that that the FTP service has anonymous login enabled.
-
-
-
-Not only that but it seems I have access to the root directory machine although not root privileges. Looking into the home di...
     </summary>
   
 

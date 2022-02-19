@@ -639,54 +639,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -711,6 +663,31 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -720,6 +697,15 @@
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -751,6 +737,39 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
   
     
     
@@ -764,6 +783,33 @@
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -789,14 +835,29 @@
     
     
     
-      
-    
   
     
     
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -804,16 +865,6 @@
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -844,16 +895,19 @@
       <a class="post-tag" href="/tags/linux/">Linux</a>
     
       
-      <a class="post-tag" href="/tags/network-attacks/">Network-Attacks</a>
-    
-      
-      <a class="post-tag" href="/tags/privilege-escalation/">Privilege-Escalation</a>
+      <a class="post-tag" href="/tags/network-analysis/">Network-Analysis</a>
     
       
       <a class="post-tag" href="/tags/sqli/">SQLi</a>
     
       
       <a class="post-tag" href="/tags/web-attacks/">Web-Attacks</a>
+    
+      
+      <a class="post-tag" href="/tags/network-attacks/">Network-Attacks</a>
+    
+      
+      <a class="post-tag" href="/tags/privilege-escalation/">Privilege-Escalation</a>
     
 
     </div>
@@ -899,6 +953,45 @@
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -1030,9 +1123,6 @@
   
     
     
-  
-    
-    
       
       
         
@@ -1052,7 +1142,7 @@
       
       
       <div class="card">
-        <a href="/posts/THM-Gallery-Writeup/">
+        <a href="/posts/emotet_network_analysis/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1064,10 +1154,10 @@
 
 
 <em class="timeago small"
-    date="2022-02-14 00:42:00 +0800"
-    >Feb 14</em>
+    date="2022-02-19 00:00:00 +0800"
+    >Feb 19</em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe Gallery Writeup</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Network Analysis of Emotet Malware Activity Using Wireshark</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1076,15 +1166,53 @@
 
 
 
-                The THM room Gallery is an easy level CTF room created to test your skills in SQLi and exploiting known vulnerabilities.
+                Introduction
+
+In this post I will be showing you how I analyzed emotet malware in a network log using Wireshark and hopefully this will help you give an idea of what to do and look for when analyzi...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/THM-plotted-tms-writeup/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+
+
+
+
+<em class="timeago small"
+    date="2022-02-19 00:00:00 +0800"
+    >Feb 19</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe Plotted-TMS Writeup</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Introduction
+
+Plotted-TMS is a easy level THM room created by sa.infinity8888.
 
 Recon
 
-Start with a simple port scan.
+Starting with 2 nmap scans, we see that there are 2 services running - SSH and Apache on port 80 and 445.
 
 
 
-Here we can see that there are two...
+V...
               </p>
             </div>
           </div>
@@ -1094,7 +1222,7 @@ Here we can see that there are two...
       
       
       <div class="card">
-        <a href="/posts/CVE-2021-4034-a.k.a.-Pwnkit-Explanation/">
+        <a href="/posts/THM-h4cked-Writeup/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1106,10 +1234,10 @@ Here we can see that there are two...
 
 
 <em class="timeago small"
-    date="2022-02-07 00:00:00 +0800"
-    >Feb  7</em>
+    date="2022-02-19 00:00:00 +0800"
+    >Feb 19</em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Explanation of CVE-2021-4034 a.k.a. Pwnkit</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe h4cked Writeup</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1118,49 +1246,11 @@ Here we can see that there are two...
 
 
 
-                On January 25, 2022, security researchers at Qualys labs disclosed a Local Privilege Escalation vulnerability in Linux within Polkit’s pkexec component. Listed as CVE-2021-4034 and given a high sev...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/THM-Library-Walkthrough/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
--->
+                h4cked is an easy CTF room that exercises your skills in network analysis.
 
+Network Analysis Using Wireshark
 
-
-
-
-<em class="timeago small"
-    date="2022-01-18 00:00:00 +0800"
-    >Jan 18</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>THM Library Walkthrough</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking.
-
-Enumeration
-
-A little after booting the machine, I start with a nmap scan.
-
-
-
-In ...
+The story behind this room is that a machine got compromised and now we must examine a ...
               </p>
             </div>
           </div>
@@ -1305,54 +1395,6 @@ In ...
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1377,6 +1419,31 @@ In ...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1386,6 +1453,15 @@ In ...
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1417,6 +1493,39 @@ In ...
     
     
     
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
   
     
     
@@ -1430,6 +1539,33 @@ In ...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1455,14 +1591,29 @@ In ...
     
     
     
-      
-    
   
     
     
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1470,16 +1621,6 @@ In ...
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -1510,16 +1651,19 @@ In ...
       <a class="post-tag" href="/tags/linux/">Linux</a>
     
       
-      <a class="post-tag" href="/tags/network-attacks/">Network-Attacks</a>
-    
-      
-      <a class="post-tag" href="/tags/privilege-escalation/">Privilege-Escalation</a>
+      <a class="post-tag" href="/tags/network-analysis/">Network-Analysis</a>
     
       
       <a class="post-tag" href="/tags/sqli/">SQLi</a>
     
       
       <a class="post-tag" href="/tags/web-attacks/">Web-Attacks</a>
+    
+      
+      <a class="post-tag" href="/tags/network-attacks/">Network-Attacks</a>
+    
+      
+      <a class="post-tag" href="/tags/privilege-escalation/">Privilege-Escalation</a>
     
 
     </div>
