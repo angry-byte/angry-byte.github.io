@@ -652,9 +652,13 @@
 
 <p>HPP was discovered and presented in 2009 in which the security community then thought of it as a new method of being able to bypass web application firewalls. This vulnerability exists because there is no standard to how a web server should handle parameters with the same names. Without a standard, web application components handle HPP in a variety of ways. The chances of finding HPP is common as it is part of “Insecure Design” in the OWASP 2021 Top 10 Vulnerabilities.</p>
 
-<p>So let’s say you have the URL query of <code class="language-plaintext highlighter-rouge">http://example.test/?color=red</code></p>
+<p>So let’s say you have the URL query of</p>
 
-<p>Then you would add another color parameter with the blue value and the url becomes: <code class="language-plaintext highlighter-rouge">http://example.test/?color=red&amp;color=blue</code></p>
+<p><code class="language-plaintext highlighter-rouge">http://example.test/?color=red</code></p>
+
+<p>Then you would add another color parameter with the blue value and the url becomes:</p>
+
+<p><code class="language-plaintext highlighter-rouge">http://example.test/?color=red&amp;color=blue</code></p>
 
 <p>This is HPP and as I’ve said, which parameter value (or color) would be accepted varies. The following table is a list of some backend server setups and which parameter they would accept.</p>
 
