@@ -36,24 +36,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="TryHackMe Vulnerability Capstone Writeup" />
+<meta property="og:title" content="HTTP Parameter Pollution Explained" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="The THM room Vulnerability Capstone is a CTF room built to practice your vulnerability and exploit researching skills." />
-<meta property="og:description" content="The THM room Vulnerability Capstone is a CTF room built to practice your vulnerability and exploit researching skills." />
-<link rel="canonical" href="https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" />
-<meta property="og:url" content="https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" />
+<meta name="description" content="HTTP Parameter Pollution (HPP) is a method where an attacker uses multiple parameters with the same name to make the server respond and behave unexpectedly." />
+<meta property="og:description" content="HTTP Parameter Pollution (HPP) is a method where an attacker uses multiple parameters with the same name to make the server respond and behave unexpectedly." />
+<link rel="canonical" href="https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" />
+<meta property="og:url" content="https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" />
 <meta property="og:site_name" content="angry-byte.com" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-12-27T00:00:00+08:00" />
+<meta property="article:published_time" content="2022-02-28T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="TryHackMe Vulnerability Capstone Writeup" />
+<meta property="twitter:title" content="HTTP Parameter Pollution Explained" />
 <meta name="twitter:site" content="@angry_byte" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-12-27T00:00:00+08:00","datePublished":"2021-12-27T00:00:00+08:00","description":"The THM room Vulnerability Capstone is a CTF room built to practice your vulnerability and exploit researching skills.","headline":"TryHackMe Vulnerability Capstone Writeup","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/"},"url":"https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-02-28T00:00:00+08:00","datePublished":"2022-02-28T00:00:00+08:00","description":"HTTP Parameter Pollution (HPP) is a method where an attacker uses multiple parameters with the same name to make the server respond and behave unexpectedly.","headline":"HTTP Parameter Pollution Explained","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/"},"url":"https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>TryHackMe Vulnerability Capstone Writeup | angry-byte.com
+  <title>HTTP Parameter Pollution Explained | angry-byte.com
   </title>
 
   <!--
@@ -276,7 +276,7 @@
         
 
           
-            <span>TryHackMe Vulnerability Capstone Writeup</span>
+            <span>HTTP Parameter Pollution Explained</span>
           
 
         
@@ -398,337 +398,6 @@
       
       
         
-
-    
-      
-
-        <!-- Add CDN URL -->
-        
-
-        <!-- Add image path -->
-        
-
-        
-        
-
-      
-
-      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-
-      
-
-    
-
-    <!-- Add SVG placehoder to prevent layout reflow -->
-
-    
-
-    <!-- Bypass the HTML-proofer test -->
-    
-
-    
-
-  
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-        
-
-    
-      
-
-        <!-- Add CDN URL -->
-        
-
-        <!-- Add image path -->
-        
-
-        
-        
-
-      
-
-      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-
-      
-
-    
-
-    <!-- Add SVG placehoder to prevent layout reflow -->
-
-    
-
-    <!-- Bypass the HTML-proofer test -->
-    
-
-    
-
-  
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-        
-
-    
-      
-
-        <!-- Add CDN URL -->
-        
-
-        <!-- Add image path -->
-        
-
-        
-        
-
-      
-
-      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-
-      
-
-    
-
-    <!-- Add SVG placehoder to prevent layout reflow -->
-
-    
-
-    <!-- Bypass the HTML-proofer test -->
-    
-
-    
-
-  
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-
-    
-      
-
-        <!-- Add CDN URL -->
-        
-
-        <!-- Add image path -->
-        
-
-        
-        
-
-      
-
-      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-
-      
-
-    
-
-    <!-- Add SVG placehoder to prevent layout reflow -->
-
-    
-
-    <!-- Bypass the HTML-proofer test -->
-    
-
-    
-
-  
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-
-    
-      
-
-        <!-- Add CDN URL -->
-        
-
-        <!-- Add image path -->
-        
-
-        
-        
-
-      
-
-      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-
-      
-
-    
-
-    <!-- Add SVG placehoder to prevent layout reflow -->
-
-    
-
-    <!-- Bypass the HTML-proofer test -->
-    
-
-    
-
-  
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
       
       
         
@@ -815,6 +484,58 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -846,7 +567,7 @@
 
 
 
-<h1 data-toc-skip>TryHackMe Vulnerability Capstone Writeup</h1>
+<h1 data-toc-skip>HTTP Parameter Pollution Explained</h1>
 
 <div class="post-meta text-muted">
 
@@ -880,12 +601,12 @@
 
 
 <em class="timeago"
-    date="2021-12-27 00:00:00 +0800"
+    date="2022-02-28 00:00:00 +0800"
     
       data-toggle="tooltip"
       data-placement="bottom"
-      title="Mon, Dec 27, 2021, 12:00 AM +0800"
-    >Dec 27, 2021</em>
+      title="Mon, Feb 28, 2022, 12:00 AM +0800"
+    >Feb 28</em>
 
       </span>
 
@@ -912,8 +633,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="504 words">
-  <em>2 min</em> read</span>
+  title="690 words">
+  <em>3 min</em> read</span>
 
 
       <!-- page views -->
@@ -925,47 +646,115 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <p>The THM room <a href="https://tryhackme.com/room/vulnerabilitycapstone">Vulnerability Capstone</a> is a CTF room built to practice your vulnerability and exploit researching skills.</p>
+  <p>HTTP Parameter Pollution (HPP) is a method where an attacker uses multiple parameters with the same name to make the server respond and behave unexpectedly.</p>
 
-<h2 id="recon">Recon<a href="#recon" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+<h2 id="how-it-works">How it Works<a href="#how-it-works" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
-<p>Once the machine has started, we do a quick mandatory nmap scan to see what network services are running on the machine.</p>
+<p>HPP was discovered and presented in 2009 in which the security community then thought of it as a new method of being able to bypass web application firewalls. This vulnerability exists because there is no standard to how a web server should handle parameters with the same names. Without a standard, web application components handle HPP in a variety of ways. The chances of finding HPP is common as it is part of “Insecure Design” in the OWASP 2021 Top 10 Vulnerabilities.</p>
 
-<p><a href="/assets/images/post2/1.png"><img data-src="/assets/images/post2/1.png" alt="Nmap Scan" data-proofer-ignore></a></p>
+<p>So let’s say you have the URL query of <code class="language-plaintext highlighter-rouge">http://example.test/?color=red</code></p>
 
-<p>Here we see that there are two ports open, SSH and HTTP. Using a browser, we then take a look at the website.</p>
+<p>Then you would add another color parameter with the blue value and the url becomes: <code class="language-plaintext highlighter-rouge">http://example.test/?color=red&amp;color=blue</code></p>
 
-<p><a href="/assets/images/post2/2.png"><img data-src="/assets/images/post2/2.png" alt="Website Visit" data-proofer-ignore></a></p>
+<p>This is HPP and as I’ve said, which parameter value (or color) would be accepted varies. The following table is a list of some backend server setups and which parameter they would accept.</p>
 
-<p>Immediately we are greeted by the default page of FUEL, a CMS software. The bottom version is also displayed to be <code class="language-plaintext highlighter-rouge">1.4</code>. Both of which are the answers to questions 1 and 2 on task 2.</p>
+<p><img data-src="/assets/images/post12/1.png" alt="OWASP HPP Table" data-proofer-ignore>
+<em>Source: OWASP 2009 EU Conference</em></p>
 
-<p>The next question then asks what is the CVE ID that allows an attacker to remotely execute code on the web application. Here we can do two things, which is go straight to Google and search with the query “Fuel CMS 1.4 exploits” or search a vulnerability database such as <a href="https://www.exploit-db.com/">Exploit-DB</a>.</p>
+<p>It is important to note that HPP isn’t a vulnerability itself, but it can be abused if developers aren’t aware of it. Wether or not HPP is a vulnerability depends on the configuration and code of the web application. HPP can essentially be used to:</p>
+<ul>
+  <li>Bypass security control mechanisms such as authentication</li>
+  <li>Bypass filters (e.g. the web application firewall)</li>
+  <li>Modify internal values</li>
+  <li>Chain other web attacks such as SQL, XSS, IDOR, or even RCE</li>
+  <li>Change the application flow</li>
+</ul>
 
-<p><a href="/assets/images/post2/3.png"><img data-src="/assets/images/post2/3.png" alt="Exploit Search" data-proofer-ignore></a></p>
+<h2 id="youtube-example">YouTube Example<a href="#youtube-example" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
-<p>On this webpage we see there are 3 exploits specifically that will allow RCE. Visiting any of the links will lead to the exploit code and the CVE ID which is CVE-2018-16763, the answer to question 3 on task 2.</p>
+<p>The URL format of a YouTube video would typically be:</p>
 
-<h2 id="exploitation">Exploitation<a href="#exploitation" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+<p><code class="language-plaintext highlighter-rouge">https://youtube.com/watch?v=[video ID parameter value here]</code></p>
 
-<p>Next is what I thought to be challenging as it took more time that I thought it should.</p>
+<p>The video ID parameter value of Rick Astley’s Never Gonna Give you Up music video is <em>dQw4w9WgXcQ</em> and the video ID parameter of a funny video that I like is <em>nNZeiK1Z6oc</em></p>
 
-<p>Viewing each of the exploits, we see that they are each built slightly differently with one being made in python2, another in ruby, and the last in python3. I chose the python3 script by Padsala Trushal because I am familiar with the langauge and it was up to date.</p>
+<p>The following four links has 4 video ID parameters. Which parameter placement do you think YouTube will accept to play the funny video?</p>
 
-<p><a href="/assets/images/post2/4.png"><img data-src="/assets/images/post2/4.png" alt="Exploit1" data-proofer-ignore></a></p>
+<p>Option 1 - last parameter:</p>
 
-<p>However to my surprise, the exploit didn’t work and just returns “system” whenever I attempted to execute a command. I then tried the other two exploits on the list but both of them also didn’t work.</p>
+<p><a href="https://youtube.com/watch?v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=nNZeiK1Z6oc">https://youtube.com/watch?v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=nNZeiK1Z6oc</a></p>
 
-<p>I looked back in the questions on the page and I reread the note that said “There are numerous exploits out there that can be used for this vulnerability (some more useful than others!)”. The way I interpretted this was that there are many exploits but not all of them would work. So we’re back into recon.</p>
+<p>Option 2 - third parameter:</p>
 
-<p>From what I know, Github is a very well known site for programmers but it is also used by security engineers. Sometimes people would create their own custom exploits for CVEs making Github useful to search for exploits sometimes. Using the query “site:github.com CVE-2018-16763 exploit” on a search engine, I then went through pages of github repositories looking for an exploit that worked. The first one looked promising but I was disappointed as I couldn’t read the flag file.</p>
+<p><a href="https://youtube.com/watch?v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=nNZeiK1Z6oc&amp;v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=nNZeiK1Z6oc&amp;v=dQw4w9WgXcQ</a></p>
 
-<p><a href="/assets/images/post2/5.png"><img data-src="/assets/images/post2/5.png" alt="Exploit2" data-proofer-ignore></a></p>
+<p>Option 3 - second parameter:</p>
 
-<p>After a long while, I finally found an exploit that worked which was a bash script made by <a href="https://github.com/k4is3r13/Bash-Script-CVE-2018-16763">k4is3r13</a>. Using it, we can then either create a reverse shell, or just read the flag file off /home/ubuntu/.</p>
+<p><a href="https://youtube.com/watch?v=dQw4w9WgXcQ&amp;v=nNZeiK1Z6oc&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ&amp;v=nNZeiK1Z6oc&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ</a></p>
 
-<p><a href="/assets/images/post2/6.png"><img data-src="/assets/images/post2/6.png" alt="Exploit Image" data-proofer-ignore></a></p>
+<p>Option 4 - first parameter:</p>
 
-<p>Although I strugged a little bit finding an exploit that worked, it was satisfying to have finally found one with all that work. Overall this is a great room to practicing vulnerability and exploit researching skills.</p>
+<p><a href="https://youtube.com/watch?v=nNZeiK1Z6oc&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ">https://youtube.com/watch?v=nNZeiK1Z6oc&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ&amp;v=dQw4w9WgXcQ</a></p>
+
+<h2 id="stealing-from-banks-with-hpp-and-real-life-examples">Stealing From Banks with HPP and Real Life Examples<a href="#stealing-from-banks-with-hpp-and-real-life-examples" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<p>Let’s say there’s a bank that has an online website and the URL <code class="language-plaintext highlighter-rouge">https://bank.url/</code> with the server running Apache and PHP. The website has the function to send and receive money from other people. When that happens, the following URL is sent:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://bank.url/?from=attacker&amp;to=alice&amp;amount=100</code></p>
+
+<p>To prevent tampering with the <em>from</em> parameter, the site looks at the user’s cookie for validation so changing the value of the <em>from</em> parameter to alice or any other user will invalidate the transaction.</p>
+
+<p>If the website developers of the bank aren’t aware of HPP, the attacker can create a URL that will make Alice send money to the attacker. The URL would look like this:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://bank.url/?from=attacker&amp;to=alice&amp;from=alice&amp;to=attacker&amp;amount=100</code></p>
+
+<p>The above URL makes it so the first <em>from</em> and <em>to</em> parameters are ignored and the last two are accepted and alice sends 100 dollars to attacker.</p>
+
+<p>The following are examples of HPP in real life.</p>
+
+<ul>
+  <li><a href="https://hackerone.com/reports/114169">Bypassing authentication on Twitter ($2,520 USD)</a></li>
+  <li><a href="https://andresriancho.com/recaptcha-bypass-via-http-parameter-pollution/">Bypassing Google’s reCAPTCHA ($500 USD)</a></li>
+  <li><a href="https://blog.mert.ninja/twitter-hpp-vulnerability/">Twitter account takeover (Undisclosed Bug Report)</a></li>
+  <li><a href="https://blog.mindedsecurity.com/2009/05/client-side-http-parameter-pollution.html">Deleting all user messages in Yahoo! Classic Mail</a></li>
+</ul>
+
+<h2 id="testing-and-exploitation">Testing and Exploitation<a href="#testing-and-exploitation" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<p>Testing can be a pain especially when the web server would use dozens of parameters or requests. Using an HTTP proxy such as ZAP or Burp Suite can help make things easier by identifying all the parameters used in the website. Keep in mind that parameters can appear in both HTTP GET and POST requests.</p>
+
+<p>For best results, testing HPP should be done manually. While programs can be created to automate the test, many false positives could be generated.</p>
+
+<p>If a WAF is in place, HPP can help you bypass it and send your payload to execute attacks such as SQLI and XSS.</p>
+
+<h2 id="mitigation">Mitigation<a href="#mitigation" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<ul>
+  <li>Set the application to accept parameters when and where they’re expected</li>
+  <li>Implement proper input validation and sanitation on all user-supplied data
+    <ul>
+      <li>URL encode user input before embedding input in a URL</li>
+    </ul>
+  </li>
+  <li>Configure the WAF to not accept a request containing multiple parameters with the same name</li>
+</ul>
+
+<h2 id="references">References<a href="#references" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+<ol>
+  <li>
+    <p><a href="https://youtube.com/watch?v=QVZBl8yxVX0">PwnFunction - HTTP Parameter Pollution Explained</a></p>
+  </li>
+  <li>
+    <p><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution">https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution</a></p>
+  </li>
+  <li>
+    <p><a href="https://macrosec.tech/index.php/2021/05/24/http-parameter-pollution-hpp/">https://macrosec.tech/index.php/2021/05/24/http-parameter-pollution-hpp/</a></p>
+  </li>
+  <li>
+    <p><a href="https://blog.intigriti.com/hackademy/http-parameter-pollution/">https://blog.intigriti.com/hackademy/http-parameter-pollution/</a></p>
+  </li>
+</ol>
 
 </div>
 
@@ -976,7 +765,7 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw mr-1"></i>
     
-      <a href='/categories/writeups/'>Writeups</a>
+      <a href='/categories/cybersecurity/'>Cybersecurity</a>
   </div>
   
 
@@ -985,14 +774,8 @@
   <div class="post-tags">
     <i class="fa fa-tags fa-fw mr-1"></i>
       
-      <a href="/tags/vulnerabilities/"
-          class="post-tag no-text-decoration" >Vulnerabilities</a>
-      
-      <a href="/tags/ctf/"
-          class="post-tag no-text-decoration" >CTF</a>
-      
-      <a href="/tags/tryhackme/"
-          class="post-tag no-text-decoration" >TryHackMe</a>
+      <a href="/tags/web-attacks/"
+          class="post-tag no-text-decoration" >Web-Attacks</a>
       
   </div>
   
@@ -1026,19 +809,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=TryHackMe Vulnerability Capstone Writeup - angry-byte.com&url=https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=HTTP Parameter Pollution Explained - angry-byte.com&url=https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=TryHackMe Vulnerability Capstone Writeup - angry-byte.com&u=https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=HTTP Parameter Pollution Explained - angry-byte.com&u=https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=TryHackMe Vulnerability Capstone Writeup - angry-byte.com&url=https://www.angry-byte.com/posts/THM-Vulnerability-Capstone/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=HTTP Parameter Pollution Explained - angry-byte.com&url=https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -1464,137 +1247,137 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
   
 
   
@@ -1629,7 +1412,7 @@
       
       
       <div class="card">
-        <a href="/posts/THM-Lazy-Admin-Walkthrough/">
+        <a href="/posts/THM-plotted-tms-writeup/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1641,10 +1424,10 @@
 
 
 <em class="timeago small"
-    date="2022-01-07 00:00:00 +0800"
-    >Jan  7</em>
+    date="2022-02-19 00:00:00 +0800"
+    >Feb 19</em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe Lazy Admin Walkthrough</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe Plotted-TMS Writeup</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1653,11 +1436,17 @@
 
 
 
-                Lazy Admin is a an easy CTF room on TryHackMe that will test one’s enumeration and linux skills.
+                Introduction
+
+Plotted-TMS is a easy level THM room created by sa.infinity8888.
 
 Recon
 
-After deploying the machine, I did a mandatory nmap scan to see what ports are open and what...
+Starting with 2 nmap scans, we see that there are 2 services running - SSH and Apache on port 80 and 445.
+
+
+
+V...
               </p>
             </div>
           </div>
@@ -1667,7 +1456,7 @@ After deploying the machine, I did a mandatory nmap scan to see what ports are o
       
       
       <div class="card">
-        <a href="/posts/THM-Anonforce-Writeup/">
+        <a href="/posts/THM-Inclusion/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1679,10 +1468,10 @@ After deploying the machine, I did a mandatory nmap scan to see what ports are o
 
 
 <em class="timeago small"
-    date="2022-01-17 00:00:00 +0800"
-    >Jan 17</em>
+    date="2021-12-23 00:00:00 +0800"
+    >Dec 23, 2021</em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>THM Anonforce Writeup</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>TryHackMe Inclusion Writeup</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1691,15 +1480,7 @@ After deploying the machine, I did a mandatory nmap scan to see what ports are o
 
 
 
-                Anonforce is an easy room on TryHackMe created to test password cracking skills.
-
-Recon
-
-Starting with a nmap scan, I see that there are two ports open which are FTP and SSH.
-
-
-
-A more aggressive p...
+                The TryHackMe inclusion room is a beginner CTF room created to practice exploiting a local file inclusion (LFI) vulnerability in a web server. Once you have booted up the machine, let’s get started...
               </p>
             </div>
           </div>
@@ -1709,7 +1490,7 @@ A more aggressive p...
       
       
       <div class="card">
-        <a href="/posts/THM-Library-Walkthrough/">
+        <a href="/posts/CVE-2021-4034-a.k.a.-Pwnkit-Explanation/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1721,10 +1502,10 @@ A more aggressive p...
 
 
 <em class="timeago small"
-    date="2022-01-18 00:00:00 +0800"
-    >Jan 18</em>
+    date="2022-02-07 00:00:00 +0800"
+    >Feb  7</em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>THM Library Walkthrough</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Explanation of CVE-2021-4034 a.k.a. Pwnkit</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1733,15 +1514,7 @@ A more aggressive p...
 
 
 
-                The THM library room is a room created to practice SSH network service brute forcing and Python library hijacking.
-
-Enumeration
-
-A little after booting the machine, I start with a nmap scan.
-
-
-
-In ...
+                On January 25, 2022, security researchers at Qualys labs disclosed a Local Privilege Escalation vulnerability in Linux within Polkit’s pkexec component. Listed as CVE-2021-4034 and given a high sev...
               </p>
             </div>
           </div>
@@ -1760,17 +1533,17 @@ In ...
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/THM-Inclusion/" class="btn btn-outline-primary"
+  <a href="/posts/emotet_network_analysis/" class="btn btn-outline-primary"
     prompt="Older">
-    <p>TryHackMe Inclusion Writeup</p>
+    <p>Network Analysis of Emotet Malware Activity Using Wireshark</p>
   </a>
   
 
   
-  <a href="/posts/THM-Lazy-Admin-Walkthrough/" class="btn btn-outline-primary"
+  <span class="btn btn-outline-primary disabled"
     prompt="Newer">
-    <p>TryHackMe Lazy Admin Walkthrough</p>
-  </a>
+    <p>-</p>
+  </span>
   
 
 </div>

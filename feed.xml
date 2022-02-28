@@ -4,7 +4,7 @@
   <id>https://www.angry-byte.com/</id>
   <title>angry-byte.com</title>
   <subtitle>A writing blog mainly on cybersecurity.</subtitle>
-  <updated>2022-02-19T20:39:57+08:00</updated>
+  <updated>2022-02-28T14:53:20+08:00</updated>
   <author>
     <name>AngryByte</name>
     <uri>https://www.angry-byte.com/</uri>
@@ -17,6 +17,44 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HTTP Parameter Pollution Explained</title>
+    <link href="https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" rel="alternate" type="text/html" title="HTTP Parameter Pollution Explained" />
+    <published>2022-02-28T00:00:00+08:00</published>
+  
+    <updated>2022-02-28T00:00:00+08:00</updated>
+  
+    <id>https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/</id>
+    <content src="https://www.angry-byte.com/posts/What-Is-HTTP-Paramter-Pollution/" />
+    <author>
+      <name>AngryByte</name>
+    </author>
+
+  
+    
+    <category term="Cybersecurity" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      HTTP Parameter Pollution (HPP) is a method where an attacker uses multiple parameters with the same name to make the server respond and behave unexpectedly.
+
+How it Works
+
+HPP was discovered and presented in 2009 in which the security community then thought of it as a new method of being able to bypass web application firewalls. This vulnerability exists because there is no standard to how a we...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -187,40 +225,6 @@ Start with a simple port scan.
 
 
 Here we can see that there are two ports open on the system. So the answer to the first question in task 1 is 2. If we were to then visit the website, we would be shown a default page for Apache2 in Ubuntu. However, if we were to visi...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Explanation of CVE-2021-4034 a.k.a. Pwnkit</title>
-    <link href="https://www.angry-byte.com/posts/CVE-2021-4034-a.k.a.-Pwnkit-Explanation/" rel="alternate" type="text/html" title="Explanation of CVE-2021-4034 a.k.a. Pwnkit" />
-    <published>2022-02-07T00:00:00+08:00</published>
-  
-    <updated>2022-02-07T00:00:00+08:00</updated>
-  
-    <id>https://www.angry-byte.com/posts/CVE-2021-4034-a.k.a.-Pwnkit-Explanation/</id>
-    <content src="https://www.angry-byte.com/posts/CVE-2021-4034-a.k.a.-Pwnkit-Explanation/" />
-    <author>
-      <name>AngryByte</name>
-    </author>
-
-  
-    
-    <category term="Cybersecurity" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      On January 25, 2022, security researchers at Qualys labs disclosed a Local Privilege Escalation vulnerability in Linux within Polkit’s pkexec component. Listed as CVE-2021-4034 and given a high severity rating of 7.8 out of 10 on the CVSS scale, this vulnerability affects many Linux distributions including Ubuntu, Debian, Fedora, and CentOS. A proof of concept (POC) wasn’t submitted by Qualys a...
     </summary>
   
 
